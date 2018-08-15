@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <meta charset="UTF-8">
+    <script>
+window.onload = function getInput(){
+  const apiURL = 'https://swapi.co/api/films/';
+  
+
+
+
+
+
+fetch(apiURL)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    const show = data[0];
+   console.log (data.results);
+    
+
+    })
+}
+
+
+
+
+
+
+
+
+</script>
+  </head>
+  <body>
+
+  </body>
+</html>

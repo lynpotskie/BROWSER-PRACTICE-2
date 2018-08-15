@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Properties</title>
+  <script>
+  window.onload = function(){
+    const form = document.querySelector('form');
+const username = form.elements[0].value;
+
+username.value; // we get an empty string as it doesn't have a value
+username.value = 'morty'; // We can also set an input value
+password.value;
+password.value = '12345';
+form.addEventHandler('submit', function(event) {
+  event.preventDefault();
+});
+  }
+  
+  
+  
+  
+  </script>
+</head>
+<body>
+  <form action="save_user.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <button>Show Username and Password</button>
+  </form>
+  <div></div>
+</body>
+</html>
